@@ -1,0 +1,11 @@
+/* CSS responsible for styling the body */
+body {
+    background: #fefefe;
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+    font-size: 15pt;
+}
+
+label{
+    display: block;
+    font-size: 12pt;
+}
