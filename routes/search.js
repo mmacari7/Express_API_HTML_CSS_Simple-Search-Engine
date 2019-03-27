@@ -37,6 +37,7 @@ async function searchPeople(searchString){
     for(let i=0; i < allPeople.length; i++){
         // Search for the string in the persons first name and last name
         if(allPeople[i].firstName.toLowerCase().includes(searchString) || allPeople[i].lastName.toLowerCase().includes(searchString)){
+            // List must be no more than 20 people
             if(matches.length < 20){
                 matches.push(allPeople[i])
             }
