@@ -1,6 +1,7 @@
 // Michael Macari
 // Index js file for all the routes
 const searchRoute = require('./search')
+const detailsRoute = require('./details')
 const path = require('path')
 
 const constructorMethod = (app) => {
@@ -9,6 +10,7 @@ const constructorMethod = (app) => {
         res.sendFile(path.resolve("static/main.html"))
     })
 
+    app.use("/details", detailsRoute)
     app.use("/search", searchRoute)
     
     // All else send 404

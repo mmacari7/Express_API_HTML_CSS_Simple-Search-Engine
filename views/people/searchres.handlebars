@@ -7,10 +7,10 @@
 </head>
 
 <body>
-    <article class="people">
+    <main>
+        <article class="people">
         <h1>People Found</h1>
         <h2>{{people.searchTerm}}</h2>
-        <main>
             {{#if people.personsArray.length}}
             <ul>
                 {{#each people.personsArray}}
@@ -22,8 +22,7 @@
             {{else}}
             <p class="not-found">We're sorry, but no results were found for {{people.searchTerm}}.</p>
             {{/if}}
-
-        </main>
+        </article>
         <a href="/">Make another search</a>
-    </article>
+    </main>
 </body>
